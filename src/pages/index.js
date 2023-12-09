@@ -40,13 +40,13 @@ export default function Home() {
           </div>
           <div className={styles.imgArea}>
             <div className={styles.card}>
-              <h3>ibibiub</h3>
+              <h2>Sign Up</h2>
               <br />
+              <h3>Step 1: Verify your Aadhar</h3>
               <LogInWithAnonAadhaar />
               <br />
+              <h3>Step 2: Register your passkey</h3>
               <RegisterPasskeyButton />
-              <br />
-              <VerifyPasskeyButton/>
               <br />
               {passkeyVerified && <p>Verified Passkey ✅</p>}
             </div>
