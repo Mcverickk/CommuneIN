@@ -11,7 +11,7 @@ const GlowingButton = () => {
   const handleLaunch = async () => {
     const verify = await verifyPasskey();
     if(verify){
-      router.push('/dashboard');
+      router.push('/launchpad');
     } else {
       alert("Verification Failed!")
     }

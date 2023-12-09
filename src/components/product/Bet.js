@@ -2,11 +2,11 @@ import React from "react";
 import Price from "./Price";
 import Time from "./Time";
 
-const Bet = ()=> {
+const Bet = (props)=> {
     return (
         <div className="bet">
-            <Price content="0.041 ETH" />
-            <Time content="3 days left" />
+            <Price content={props.price} />
+            <Time content={props.timeLeft} />
         </div>
     );
 }

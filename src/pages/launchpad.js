@@ -10,13 +10,12 @@ export default function Launchpad() {
       <DashboardNavbar/>
       <div className={styles.body}>
        
-        <NftComponent/>
+        <NftComponent pic="./communein.jpeg" info="NFTs for the exclusive Indian community." name="CommuneIN" price="0.01 mMATIC" timeLeft="3 hrs"/>
         <div className="listErc">
         <ErcComponent/>
         <ErcComponent/>
         </div>
-        <NftComponent/>
-
+        <NftComponent pic="./mrgadget.jpeg" info="A fun retro gadget collection." name="Mr.Gadget" price="2 mMATIC" timeLeft="3 days" disabled= {true}/>
         </div>
     </div>
   )

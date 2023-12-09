@@ -7,12 +7,7 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
-  mainnet,
-  polygon,
-  optimism,
-  arbitrum,
-  base,
-  zora,
+  polygonMumbai
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
@@ -24,11 +19,11 @@ export default function MyApp({ Component, pageProps }) {
   console.log("App ID ==> ", app_id);
 
   const { chains, publicClient } = configureChains(
-    [mainnet, polygon, optimism, arbitrum, base, zora],
+    [polygonMumbai],
     [publicProvider()]
   );
   const { connectors } = getDefaultWallets({
-    appName: 'My RainbowKit App',
+    appName: 'CommuneIN',
     projectId: 'fdb80d2f241796e3b6d3f28cc175b6bf',
     chains
   });
