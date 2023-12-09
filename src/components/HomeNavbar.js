@@ -6,14 +6,14 @@ const HomeNavbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link href="/">
-        <img className={styles.logo} src="logo.png" />
+        {/* <img className={styles.logo} src="logo.png" /> */}
       </Link>
       <ul className={styles.navlist}>
         <li className={styles.navlistitem}></li>
         <li className={styles.navlistitem}>
           <a
             className={styles.navText}
-            href="https://github.com/Mcverickk/box-protocol-contracts"
+            href="https://github.com/chiragpay3/anonaadhar-community-eth-india"
             target="_blank"
             rel="noreferrer"
           >

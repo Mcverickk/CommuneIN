@@ -57,15 +57,17 @@ const PasskeyLogin = () => {
       );
       setPasskeyVerified(true);
       console.log({ authenticationParsed });
+      return true;
     } catch (e) {
       setPasskeyVerified(false);
       console.error(e);
+      return false;
     }
   }
 
-  const RegisterPasskeyButton = () => {
+  const RegisterPasskeyButton = (props) => {
     return(
-      <button className={styles.button} onClick={connectPasskey}>Register Passkey</button>
+      <button className={props.aadhaarVerified ? styles.button : styles.inactivebutton} onClick={connectPasskey}>Register Passkey</button>
     )
   }
 

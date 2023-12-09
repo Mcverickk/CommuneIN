@@ -21,15 +21,21 @@
 }
 
 .maintext {
-  color: rgba(240, 248, 255, 0.85);
+  background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+      -webkit-background-clip: text;
+      color: transparent;
+  /* color: rgba(240, 248, 255, 0.85); */
   margin-top: 80px;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 50px;
+  background-size: 70%;
 }
 
 .detailText {
   color: rgba(240, 248, 255, 0.85);
   margin: 30px 0px;
+  margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .footer {
@@ -53,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 450px;
   width: 400px;
 
   background-color: #ffffff07; /* White background */
@@ -75,5 +81,16 @@
   font-size: 16px;
 }
 
+.signup{
+  margin: 20px;
+  font-size: 30px;
+  color: #ffffffe5;
+  font-weight: 600;
+}
+
+.steps{
+  font-size: 18px;
+  margin: 10px;
+}
 /* Add more styles as needed */
 

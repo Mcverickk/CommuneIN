@@ -7,18 +7,9 @@ import PasskeyLogin from "../components/PasskeyLogin";
 
 
 export default function Home() {
-  const [loggedIn, setLoggedIn] = useState(false);
   const {LogInWithAnonAadhaar, aadhaarVerified} = AadharLogin();
-  const {RegisterPasskeyButton, VerifyPasskeyButton, verifyPasskey, passkeyRegistered, passkeyVerified} = PasskeyLogin();
+  const {RegisterPasskeyButton, passkeyRegistered} = PasskeyLogin();
 
-  useEffect(() => {
-    if(passkeyVerified){
-      setLoggedIn(true);
-    } else {
-      setLoggedIn(false);
-    }
-
-  },[passkeyVerified])
 
   return (
     <>
@@ -27,34 +18,31 @@ export default function Home() {
         <div className={styles.body}>
           <div className={styles.textArea}>
             <h4 className={styles.maintext}>
-              Invest in Web3 ideas,
-              <br />
-              with Box Protocol.
+              CommuneIN <br/>
             </h4>
+            {/* <p className={styles.detailText}>India's Premier Community for ICOs, Grants and Fund Distribution</p> */}
             <p className={styles.detailText}>
-              Get in on the Web3 revolution with our easy, self-custodial way
-              <br /> to invest in boxes representing the hottest ideas and
-              sectors in Web3!
+            Welcome to an exclusive community tailored for Indian citizens,<br/> a vibrant launchpad propelling you into the world of<br/> cutting-edge Web3 opportunities.
             </p>
             <GlowingButton />
           </div>
           <div className={styles.imgArea}>
             <div className={styles.card}>
-              <h2>Sign Up</h2>
+              <h2 className={styles.signup}>Sign Up with Aadhar</h2>
               <br />
-              <h3>Step 1: Verify your Aadhar</h3>
+              <h3 className={styles.steps}>Step 1: Verify your Aadhar</h3>
               <LogInWithAnonAadhaar />
               <br />
-              <h3>Step 2: Register your passkey</h3>
-              <RegisterPasskeyButton />
+              <h3 className={styles.steps}>Step 2: Register your Passkey</h3>
+              <RegisterPasskeyButton aadhaarVerified={aadhaarVerified}/>
               <br />
-              {passkeyVerified && <p>Verified Passkey ✅</p>}
+              {aadhaarVerified && passkeyRegistered && <p>Registered Passkey ✅</p>}
             </div>
           </div>
         </div>
         <footer className={styles.footer}>
           <p className={styles.footerText}>
-            Copyright &copy; 2023 Box Protocol
+            Made with passion & 🎧
           </p>
         </footer>
       </div>
