@@ -1,19 +1,18 @@
 import React from "react";
 
-function VotingCard() {
+function VotingCard(props) {
   return (
     <div className="frame">
-      <h3 className="votingTitle font-bolder">GMX Grant Program </h3>
-      <div className="tag">W3 x</div>
-      <p className="applyTime">APPLY: 1 NOV - 31 JAN</p>
+      <h3 className="votingTitle font-bolder">{props.title}</h3>
+      <div className="tag">{props.tag}</div>
+      <p className="applyTime">{`Ends in: ${props.timeLeft}`}</p>
       <p className="descrition">
-        Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum
-        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
+        {props.info}
       </p>
       <div className="center">
       <button className='btn-erc center' style={{
           marginTop:'30px'
-        }}>APPLY</button>
+        }}>Claim</button>
       </div>
     </div>
   );

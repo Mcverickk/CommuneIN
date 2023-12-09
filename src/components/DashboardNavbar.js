@@ -9,12 +9,12 @@ const navBar = [
     to: "/launchpad",
   },
   {
-    name: "Voting",
-    to: "/voting",
-  },
-  {
     name: "Fund Distribution",
     to: "/funds",
+  },
+  {
+    name: "Voting",
+    to: "/voting",
     disableText: "coming soon",
   },
 ];
