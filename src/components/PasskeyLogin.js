@@ -17,7 +17,7 @@ const PasskeyLogin = () => {
 
   const connectPasskey = async () => {
     const challenge = process.env.CHALLENGE;
-    const registration = await client.register("Wallet Address", challenge, {
+    const registration = await client.register("CommuneIN", challenge, {
       authenticatorType: "both",
       userVerification: "required",
       timeout: 60000,
