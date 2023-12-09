@@ -9,9 +9,9 @@ const DashboardNavbar = () => {
         
       </div>
       <div className={styles.boxCenter}>
-        <span className={styles.navText}>Launchpad</span>
-        <span className={styles.navText}>Grants</span>
-        <span className={styles.navText}>Fund Distribution</span>
+        <Link href="/launchpad" className={styles.navText}>Launchpad</Link>
+        <Link href='/grants' className={styles.navText}>Grants</Link>
+        <Link href='/fund' className={styles.navText}>Fund Distribution</Link>
       </div>
       <div className={styles.boxRight}>
         <AppButton text="Launch App" />

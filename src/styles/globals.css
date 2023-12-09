@@ -27,3 +27,72 @@ body {
 } */
 
 
+.font-bold{
+  font-weight: bold;
+}
+
+.font-bolder{
+  font-weight: bolder;
+}
+
+.font-light {
+  font-weight: lighter;
+}
+
+.font-18{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.font-14{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.font-20{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.opacity-80{
+  opacity: 0.8;
+}
+
+
+
+
+
+/*buttton*/
+
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+  margin: auto;
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.m-auto{
+  margin: auto;
+}
