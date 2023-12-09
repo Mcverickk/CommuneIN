@@ -6,6 +6,9 @@ export default function Dashboard() {
     <div className={styles.background}>
       <DashboardNavbar/>
       <div className={styles.body}>
+        <div lassName={styles.card}>
+          
+        </div>
           
         </div>
     </div>

@@ -22,7 +22,7 @@ export default function Home() {
             </h4>
             {/* <p className={styles.detailText}>India's Premier Community for ICOs, Grants and Fund Distribution</p> */}
             <p className={styles.detailText}>
-            Welcome to an exclusive community tailored for Indian citizens,<br/> a vibrant launchpad propelling you into the world of<br/> cutting-edge Web3 opportunities.
+            Welcome to an exclusive community tailored for Indian citizens,<br/> a vibrant launchpad propelling you into cutting-edge Web3 opportunities.
             </p>
             <GlowingButton />
           </div>

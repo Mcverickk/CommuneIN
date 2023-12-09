@@ -4,6 +4,16 @@
   text-decoration: none;
 }
 
+.maintext {
+  background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+      -webkit-background-clip: text;
+      color: transparent;
+  /* color: rgba(240, 248, 255, 0.85); */
+  font-weight: 600;
+  font-size: 30px;
+  background-size: 100%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

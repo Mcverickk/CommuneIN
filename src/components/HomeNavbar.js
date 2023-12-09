@@ -6,7 +6,9 @@ const HomeNavbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link href="/">
-        {/* <img className={styles.logo} src="logo.png" /> */}
+        {/* <h4 className={styles.maintext}>
+          CommuneIN <br />
+        </h4> */}
       </Link>
       <ul className={styles.navlist}>
         <li className={styles.navlistitem}></li>
