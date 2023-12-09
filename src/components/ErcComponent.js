@@ -6,7 +6,7 @@ export const ErcComponent=(props)=>{
     return(
         <div className="mainErc w-100">
         <div className="contentErc w-100">
-          <Image src='/next.svg' alt='Erc20 logo'
+          <Image src={props.pic} alt='Erc20 logo'
           width={60}
           height={30}
           className="imageErc"
@@ -21,12 +21,12 @@ export const ErcComponent=(props)=>{
         <div className="footerSec w-100">
 
             <p className="font-light">{props.timeLeft}</p>
-            <button className="font-light">Buy</button>
+            <button className="font-light">{`Basket Size: ${props.basketSize} ${props.name}`}</button>
 
         </div>
-        <button className='btn-erc center' style={{
+        <button disabled={props.disabled} className='btn-erc center' style={{
           marginTop:'30px'
-        }}>Mint</button>
+        }}>Buy</button>
 
 
       </div>

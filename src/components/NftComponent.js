@@ -5,7 +5,7 @@ import NftText from "./product/NftText";
 import MintHook from "./mintHook";
 
 const NftComponent = (props) => {
-  const {handleMint, status} = MintHook();
+  const {handleMint} = MintHook();
   return (
     <div className="frame">
       <NftPic source={props.pic} />
