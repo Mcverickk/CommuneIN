@@ -85,6 +85,31 @@ body {
   text-decoration: none;
 }
 
+         
+.btn-erc {
+  background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+  margin: auto;
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-erc:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
 
 .center{
   display: flex;
@@ -95,4 +120,43 @@ body {
 
 .m-auto{
   margin: auto;
+}
+
+
+
+
+.navText {
+  color: rgba(240, 248, 255, 0.587);
+  text-decoration: none;
+  margin: 30px;
+}
+
+.navText:hover {
+  color: rgba(240, 248, 255, 0.85);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navTextActive {
+  color: rgba(240, 248, 255, 1);
+  /* color: rgba(240, 248, 255, 0.587); */
+  /* text-decoration: underline; */
+  text-decoration: none;
+}
+
+
+.frame {
+  width: 345px;
+  background-color: hsl(216, 50%, 16%);
+  /* margin: 10rem auto; */
+  border-radius: 15px;
+  padding: 1.5rem;
+  color:hsl(0, 0%, 100%);
+  
+}
+
+@media (max-width: 600px) {
+  .frame {
+      margin: 5rem auto;
+  }
 }

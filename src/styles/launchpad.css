@@ -4,6 +4,7 @@
 display: flex;
 flex-direction: column;
 gap: 20px;
+
 }
 
 .mainErc{
@@ -13,12 +14,12 @@ gap: 20px;
     border-radius: 15px;
     padding: 1.5rem;
     color:hsl(0, 0%, 100%);
-    min-height: 200px;
+    min-height: 180px;
 }
 
 .contentErc{
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 20px;
 }
 .titleErc {
@@ -38,6 +39,6 @@ gap: 20px;
 
 .footerSec{
     display: flex;
-    margin: 0 10px;
+    margin: 10px 5px 0 5px;
     justify-content: space-between;
 }

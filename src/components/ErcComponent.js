@@ -20,10 +20,13 @@ export const ErcComponent=()=>{
         </div>
         <div className="footerSec">
 
-            <p className="font-light">fuck chirag</p>
-            <p className="font-light">2 days to fuck</p>
-
+            <p className="font-light">boy chirag</p>
+            <p className="font-light">2 days to Go</p>
         </div>
+        <button className='btn-erc center' style={{
+          marginTop:'30px'
+        }}>Mint</button>
+
 
       </div>
     )
