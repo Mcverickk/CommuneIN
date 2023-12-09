@@ -42,15 +42,11 @@ export default function Home() {
             <div className={styles.card}>
               <h3>ibibiub</h3>
               <br />
-              {!passkeyRegistered && <LogInWithAnonAadhaar />}
+              <LogInWithAnonAadhaar />
               <br />
-              {/* {aadhaarVerified && !passkeyRegistered && ( */}
-                <RegisterPasskeyButton />
-              {/* )} */}
+              <RegisterPasskeyButton />
               <br />
-              {/* {passkeyRegistered &&  */}
               <VerifyPasskeyButton/>
-              {/* } */}
               <br />
               {passkeyVerified && <p>Verified Passkey ✅</p>}
             </div>
