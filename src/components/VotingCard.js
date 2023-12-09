@@ -1,6 +1,8 @@
 import React from "react";
+import ClaimHook from "./claimHook";
 
 function VotingCard(props) {
+  const {handleClaim} = ClaimHook();
   return (
     <div className="frame">
       <h3 className="votingTitle font-bolder">{props.title}</h3>
@@ -10,7 +12,7 @@ function VotingCard(props) {
         {props.info}
       </p>
       <div className="center">
-      <button className='btn-erc center' style={{
+      <button disabled={props.disabled} onClick={handleClaim} className='btn-erc center' style={{
           marginTop:'30px'
         }}>Claim</button>
       </div>
