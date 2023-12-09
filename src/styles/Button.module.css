@@ -1,6 +1,7 @@
 .button {
   background-color: #ffffff;
   height: 50px;
+  width: 250px;
   padding: 20px;
   border-radius: 15px;
   display: flex;
