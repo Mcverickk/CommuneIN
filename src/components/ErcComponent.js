@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 
-export const ErcComponent=()=>{
+export const ErcComponent=(props)=>{
 
     return(
         <div className="mainErc w-100">
@@ -12,16 +12,17 @@ export const ErcComponent=()=>{
           className="imageErc"
           />
           <div className="otherContentErc">
-          <div className="titleErc font-bolder font-20">Ficcnepfkfpd</div>
-          <div className="descErc font-14">description of this</div>
+          <div className="titleErc font-bolder font-20">{props.name}</div>
+          <div className="descErc font-14">{props.info}</div>
 
-          <div className="otherErc  font-light  font-14 opacity-80">$20000/ $50000</div>
+          <div className="otherErc  font-light  font-14 opacity-80">{`${props.sold}/ ${props.totalSupply}`}</div>
           </div>
         </div>
         <div className="footerSec w-100">
 
-            <p className="font-light">boy chirag</p>
-            <p className="font-light">2 days to Go</p>
+            <p className="font-light">{props.timeLeft}</p>
+            <button className="font-light">Buy</button>
+
         </div>
         <button className='btn-erc center' style={{
           marginTop:'30px'
