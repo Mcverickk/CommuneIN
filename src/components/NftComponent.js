@@ -10,7 +10,7 @@ const NftComponent = (props) => {
     <div className="frame">
       <NftPic source={props.pic} />
       <NftText info={props.info} name={props.name} price={props.price} timeLeft={props.timeLeft}/>
-      <button onClick={handleMint} disabled= {props.disabled} className="btn-grad" style={{
+      <button onClick={handleMint} disabled= {props.disabled} className={props.disabled? "inactivebutton" : "button"}style={{
         marginTop:'10px'
       }}>Mint</button>
     </div>

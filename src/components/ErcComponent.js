@@ -1,5 +1,7 @@
 
 import Image from 'next/image';
+import '../styles/nft.css';
+import Time from './product/Time';
 
 export const ErcComponent=(props)=>{
 
@@ -12,19 +14,17 @@ export const ErcComponent=(props)=>{
           className="imageErc"
           />
           <div className="otherContentErc">
-          <div className="titleErc font-bolder font-20">{props.name}</div>
-          <div className="descErc font-14">{props.info}</div>
-
-          <div className="otherErc  font-light  font-14 opacity-80">{`${props.sold}/ ${props.totalSupply}`}</div>
+          <div className="titleErc font-bolder font-0 title">{props.name}</div>
+          <div className="descErc font-14">{props.info} </div>
+          <span className=''>{`Supply: ${props.sold} /  ${props.totalSupply}`}</span>
           </div>
         </div>
         <div className="footerSec w-100">
-
-            <p className="font-light">{props.timeLeft}</p>
-            <button className="font-light">{`Basket Size: ${props.basketSize} ${props.name}`}</button>
+            <span className="font-light basketSize">Basket Size: ${props.basketSize}</span>
+            <Time content={props.timeLeft} />
 
         </div>
-        <button disabled={props.disabled} className='btn-erc center' style={{
+        <button disabled={props.disabled} className='inactivebutton' style={{
           marginTop:'30px'
         }}>Buy</button>
 
