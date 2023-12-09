@@ -160,3 +160,7 @@ body {
       margin: 5rem auto;
   }
 }
+
+.w-100{
+  width: 100%;
+}

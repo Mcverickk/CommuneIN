@@ -8,18 +8,24 @@ gap: 20px;
 }
 
 .mainErc{
-    width: 345px;
-    background-color: hsl(216, 50%, 16%);
-    /* margin: 10rem auto; */
-    border-radius: 15px;
-    padding: 1.5rem;
-    color:hsl(0, 0%, 100%);
+    color: #ffffff92;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 180px;
+    width: 345px;
+  
+    background-color: #ffffff07; /* White background */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.247); /* Box shadow for a subtle lift */
+    padding: 20px;
+    margin: 0 auto; /* Center the card horizontally */
 }
 
 .contentErc{
     display: flex;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 .titleErc {
@@ -37,8 +43,12 @@ gap: 20px;
     /* margin-right: 1rem; */
 }
 
+.otherErc{
+    font-style: italic;
+}
+
 .footerSec{
     display: flex;
-    margin: 10px 5px 0 5px;
+    /* margin: 10px 5px 0 5px; */
     justify-content: space-between;
 }

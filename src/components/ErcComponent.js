@@ -4,8 +4,8 @@ import Image from 'next/image';
 export const ErcComponent=()=>{
 
     return(
-        <div className="mainErc">
-        <div className="contentErc">
+        <div className="mainErc w-100">
+        <div className="contentErc w-100">
           <Image src='/next.svg' alt='Erc20 logo'
           width={60}
           height={30}
@@ -18,7 +18,7 @@ export const ErcComponent=()=>{
           <div className="otherErc  font-light  font-14 opacity-80">$20000/ $50000</div>
           </div>
         </div>
-        <div className="footerSec">
+        <div className="footerSec w-100">
 
             <p className="font-light">boy chirag</p>
             <p className="font-light">2 days to Go</p>
