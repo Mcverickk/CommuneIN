@@ -1,23 +1,35 @@
 import React from "react";
 import ClaimHook from "./claimHook";
+import Image from 'next/image';
+import '../styles/nft.css';
+import Time from './product/Time';
 
-function VotingCard(props) {
+export const VotingCard=(props)=>{
   const {handleClaim} = ClaimHook();
-  return (
-    <div className="frame">
-      <h3 className="votingTitle font-bolder">{props.title}</h3>
-      <div className="tag">{props.tag}</div>
-      <p className="applyTime">{`Ends in: ${props.timeLeft}`}</p>
-      <p className="descrition">
-        {props.info}
-      </p>
-      <div className="center">
-      <button disabled={props.disabled} onClick={handleClaim} className='btn-erc center' style={{
+    return(
+        <div className="mainErc w-100">
+        <div className="contentErc w-100">
+          <Image src={props.pic} alt='Erc20 logo'
+          width={60}
+          height={30}
+          className="imageErc"
+          />
+          <div className="otherContentErc">
+          <div className="titleErc font-bolder font-0 title">{props.name}</div>
+          <div className="descErc font-14">{props.info} </div>
+          <span className=''>{`Supply: ${props.sold}  ${props.totalSupply}`}</span>
+          </div>
+        </div>
+        <div className="footerSec w-100">
+            <span className="font-light basketSize">Basket Size: ${props.basketSize}</span>
+            <Time content={props.timeLeft} />
+
+        </div>
+        <button onClick={handleClaim} disabled={props.disabled} className={props.disabled ? "inactivebutton" : "button"} style={{
           marginTop:'30px'
         }}>Claim</button>
       </div>
-    </div>
-  );
+    )
 }
 
 export default VotingCard;
